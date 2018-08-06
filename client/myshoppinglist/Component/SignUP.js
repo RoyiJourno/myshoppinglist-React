@@ -11,14 +11,13 @@ export default class login extends Component {
     };
   }
 
-  signUP = () => {
-    this.props.signUP();
-}
-
-
   render() {
       return (
-      <KeyboardAwareScrollView style={styles.container}>
+      <KeyboardAwareScrollView style={styles.container}contentContainerStyle={styles.contentContainerStyler}
+      // scrollEnabled={true}
+      extraScrollHeight={100}
+      enableOnAndroid={true}
+      keyboardShouldPersistTaps="handled">
         <View style={styles.logoContainer}>
             <Image
             style={styles.logo} 
@@ -26,7 +25,7 @@ export default class login extends Component {
             <Text style={styles.title}>Welcome  to MyShoppingList App</Text>
         </View>
         <View style={styles.formContainer}>
-        <SignUPForm signUP={this.signUP}/>
+        <SignUPForm/>
         </View>
       </KeyboardAwareScrollView>
     );

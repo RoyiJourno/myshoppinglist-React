@@ -11,6 +11,20 @@ export default class loginPage extends React.Component {
 
     };
   }
+static navigationOptions =
+   {
+      title: 'L O G I N', 
+      headerTextStyle:
+      {
+      textAlign: 'center',
+      flexGrow: 1
+      },
+      headerStyle: {
+      backgroundColor: '#FFC107',
+    }, 
+    headerTintColor: '#000000',
+   };
+
   signUP = () =>{
     this.props.navigation.navigate('signupPage');
   }

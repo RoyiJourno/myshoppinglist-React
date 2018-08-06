@@ -17,7 +17,11 @@ export default class login extends Component {
 
   render() {
       return (
-      <KeyboardAwareScrollView style={styles.container}>
+      <KeyboardAwareScrollView style={styles.container}contentContainerStyle={styles.contentContainerStyler}
+      // scrollEnabled={true}
+      extraScrollHeight={100}
+      enableOnAndroid={true}
+      keyboardShouldPersistTaps="handled">
         <View style={styles.logoContainer}>
             <Image
             style={styles.logo} 

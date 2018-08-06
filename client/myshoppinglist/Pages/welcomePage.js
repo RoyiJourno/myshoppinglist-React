@@ -3,6 +3,16 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { Button } from 'react-native-elements';
 
 export default class welcomePage extends React.Component {
+
+  static navigationOptions = {
+    title: 'Pronóstico Actual',
+    header: () => ({
+      titleStyle: {
+        color: '#FFFFFF',
+      },
+      tintColor: '#0087B7',
+    }),
+}
   
   onPress = () =>{
     alert('welcomepage');
